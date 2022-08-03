@@ -36,20 +36,24 @@ package com.javaLearn;
 
                 //FIZZ BUZZ CHALLENGE
 
-public class Main{
+public class Main {
     public static void main(String[] args) {
+        printFizzBuzz(100);
+    }
 
-        for (int i = 1; i <= 100; i++ ){
+        public static void printFizzBuzz ( int n){
 
-            if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("Fizz Buzz");
-            }
-            if(i % 3 == 0){
-                System.out.println("FIZZ");
-            }
-            if(i % 5 == 0){
-                System.out.println("Buzz");
+            for (int i = 1; i <= n; i++) {
+
+                if (i % 3 == 0 && i % 5 == 0) {
+                    System.out.println("Fizz Buzz");
+                } else if (i % 3 == 0) {
+                    System.out.println("FIZZ");
+                } else if (i % 5 == 0) {
+                    System.out.println("Buzz");
+                } else {
+                    System.out.println(i);
+                }
             }
         }
     }
-}
