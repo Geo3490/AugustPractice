@@ -38,7 +38,7 @@ package com.javaLearn;
 
 public class Main {
     public static void main(String[] args) {
-        printFizzBuzz(100);
+        printFizzBuzz(150);
     }
 
         public static void printFizzBuzz ( int n){
