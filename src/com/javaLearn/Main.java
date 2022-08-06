@@ -35,25 +35,43 @@ package com.javaLearn;
 //}
 
                 //FIZZ BUZZ CHALLENGE
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        printFizzBuzz(150);
+//    }
+//
+//        public static void printFizzBuzz ( int n){
+//
+//            for (int i = 1; i <= n; i++) {
+//
+//                if (i % 3 == 0 && i % 5 == 0) {
+//                    System.out.println("Fizz Buzz");
+//                } else if (i % 3 == 0) {
+//                    System.out.println("FIZZ");
+//                } else if (i % 5 == 0) {
+//                    System.out.println("Buzz");
+//                } else {
+//                    System.out.println(i);
+//                }
+//            }
+//        }
+//    }
+
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        printFizzBuzz(150);
+        JFrame frame = new JFrame();
+        JPanel panel = new JPanel();
+
+        frame.setSize(350, 250);
+        frame.add(panel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+        panel.setLayout(null);
+
+        frame.setVisible(true);
     }
-
-        public static void printFizzBuzz ( int n){
-
-            for (int i = 1; i <= n; i++) {
-
-                if (i % 3 == 0 && i % 5 == 0) {
-                    System.out.println("Fizz Buzz");
-                } else if (i % 3 == 0) {
-                    System.out.println("FIZZ");
-                } else if (i % 5 == 0) {
-                    System.out.println("Buzz");
-                } else {
-                    System.out.println(i);
-                }
-            }
-        }
-    }
+}
